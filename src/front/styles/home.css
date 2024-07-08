@@ -1,7 +1,46 @@
-/*
-    home.css: This website contains selectors only used in home.css
+.image-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 2em;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 2em;
+    font: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+.overlay-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 60%;
+}

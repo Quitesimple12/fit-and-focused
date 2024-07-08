@@ -1,0 +1,45 @@
+.navbar {
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu span, .navbar-menu .navbar-button {
+    display: flex;
+    align-items: center;
+    float: right;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    background-color: transparent;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Specific styling for the button in the navbar */
+.navbar-button {
+    background-color: white;
+    color: #333;
+    height: 100%;
+}
+
+.navbar-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}

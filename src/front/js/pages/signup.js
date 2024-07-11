@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
-import { Link } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom"; 
 import rigoImageUrl from "../../img/rigo-baby.jpg";
 import homeImage from "../../img/fit-and-focused signup image.png"
 import "../../styles/home.css";

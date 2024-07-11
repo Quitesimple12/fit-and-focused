@@ -86,9 +86,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					console.error("An error occurred during user creation", error);
 				}
 				return false;
-			}
 			},
 			login: async (dataEmail, dataPassword) => {
+				console.log("Logged in flux!")
 				try{
 					const response = await fetch(process.env.BACKEND_URL + "/api/login", {
 						method: "POST",
@@ -108,7 +108,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 							token: data.token,
 							logged: true,
 						});
-						sessionStorage.setItem("token, data.token");
+						sessionStorage.setItem("token", data.token);
 						sessionStorage.setItem("userID", data.user.id);
 						return true;
 					}
@@ -123,5 +123,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 				  },
 				}
 			}
+}
 
 export default getState;
